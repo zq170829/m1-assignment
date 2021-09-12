@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>Local Pet Adoption Service</header>
-    <nav>
-        <ul>
-            <li><a href="html-index.html">Hompage</a></li>
-            <li><a href="html-pets avaiable.html">Pets Avaiable</a></li>
-            <li><a href="html-contact.html">Application</a></li>
-        </ul>
-    </nav>
+
+<body id="home">
+    <div class="main-menu">
+        <header>Local Pet Adoption Service</header>
+        <nav>
+            <ul>
+                <li class="active"><a href="html-index.html">Homepage</a></li>
+                <li><a href="html-pets avaiable.html">Pets Available</a></li>
+                <li><a href="html-contact.html">Application</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <main>
+
         <h3>About Us</h3>
-        <img src ="Image/homepage.jpg" alt="homepage" width="400"><br>
+        <img src="Image/homepage.jpg" alt="homepage" width="400"><br>
         <p1>Welcome to our website! We provide local pet adoption services for our community.
-             Thanks for stopping by! This website is one of the largest non-profit 
-             pet adoption website in Irvine. We help over 1,000 animal shelters, 
-             humane societies, SPCAs, pet rescue groups, and pet adoption agencies 
-             advertise their homeless pets to millions of adopters a month, for free. 
-             We're all about getting homeless pets into homes.</p1>
+            Thanks for stopping by! This website is one of the largest non-profit
+            pet adoption website in Irvine. We help over 1,000 animal shelters,
+            humane societies, SPCAs, pet rescue groups, and pet adoption agencies
+            advertise their homeless pets to millions of adopters a month, for free.
+            We're all about getting homeless pets into homes.</p1>
         <h3>Adoption Policy</h3>
-        <p1>Our process includes the completion of our application. Upon completion of the application 
+        <p1>Our process includes the completion of our application. Upon completion of the application
             we will contact you.<p1><br>
-        </p2>If you are a renter, we will contact your landlord for verification of animal acceptance, 
-        or you can provide a copy of your lease.If applying to adopt a dog, we will complete a 
-        home visit which requires all household members to be present.</p2>
-        <h3>Contact Us</h3>
-        <p1>Email:<a href = "mailto: adoptme@localpetservice.com">adoptme@localpetservice.com</a><br>
-        <p2>Phone:(888)491-8686</p2>
+                or you can provide a copy of your lease.If applying to adopt a dog, we will complete a
+                </p2>If you are a renter, we will contact your landlord for verification of animal acceptance,
+                home visit which requires all household members to be present.</p2>
+                <h3>Contact Us</h3>
+                <p1>Email:<a href="mailto: adoptme@localpetservice.com">adoptme@localpetservice.com</a><br>
+                    <p2>Phone:(888)491-8686</p2>
     </main>
-    <footer>&copy;Copyright 2021</footer>
-    
+    <footer>
+        <div id="nondisclaimer">
+            <div class="copy">&copy;Copyright2021 :: Local Pet Service. All rights reserved</div>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        <div id="disclaimer">
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All
+                contents are not intended for any commercial gain or use.
+            </p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

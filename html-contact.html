@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My second page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>Local Pet Adoption Service</header>
-    <nav>
-        <ul>
-          <li><a href="html-index.html">Hompage</a></li>
-          <li><a href="html-pets avaiable.html">Pets Avaiable</a></li>
-          <li><a href="html-contact.html">Application</a></li>
-        </ul>
-    </nav>
+
+<body id="application">
+    <div class="main-menu">
+        <header>Local Pet Adoption Service</header>
+        <nav>
+            <ul>
+                <li><a href="html-index.html">Homepage</a></li>
+                <li><a href="html-pets avaiable.html">Pets Available</a></li>
+                <li class="active"><a href="html-contact.html">Application</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-      <form action="/signup" method="post">
-        <fieldset>
-            <legend>User personal information</legend>
-            <label>Enter your full name</label><br>
-            <input type="text" name="name"><br>
-            <label>Enter your email</label><br>
-            <input type="email" name="email"><br>
-            <lable>Enter your phone</lable><br>
-            <input type="text" name="phone"><br>
-            <br><label>Select your gender</label><br>
-            <input type="radio" name="gender" value="male"/>Male
-            <input type="radio" name="gender" value="female"/>Female<br>
-            <br><label>What is your favorite pet?</label><br>
-            <select>
-                <option>Jacob</option>
-                <option>Terrer</option>
-                <option>Joy</option>
-            </select><br>
-            <br><label>How should we contact you?</label><br>
-            <select>
-                <option>Email</option>
-                <option>Phone</option>
-            </select><br>
-            <br>Tell us the reason of your visit today:<br>
-            <textarea rows="5" cols="30"></textarea><br>
-            <input type="submit" value="submit your application"
-        </fieldset>
+        <form action="/signup" method="post">
+            <fieldset>
+                <legend>User personal information</legend>
+
+                <label>Enter your full name</label>
+                <input type="text" name="name" placeholder="Michael Jordan">
+
+                <label>Enter your email</label>
+                <input type="email" name="email">
+
+                <label>Enter your phone</label>
+                <input type="text" name="phone">
+
+                <label>Select your gender</label>
+                <input type="radio" name="gender" value="male" />Male
+                <input type="radio" name="gender" value="female" />Female
+
+                <label>What is your favorite pet?</label>
+                <select>
+                    <option>Jacob</option>
+                    <option>Terrer</option>
+                    <option>Joy</option>
+                </select>
+
+                <label>How should we contact you?</label>
+                <select>
+                    <option>Email</option>
+                    <option>Phone</option>
+                </select>
+
+                <label>Tell us the reason of your visit today:</label>
+                <textarea rows="5" cols="30"></textarea><br>
+
+                <input type="submit" value="Submit your application">
+            </fieldset>
         </form>
     </main>
-    <footer>&copy;Copyright 2021</footer>
-    
+    <footer>
+        <div id="nondisclaimer">
+            <div class="copy">&copy;Copyright2021 :: Local Pet Service. All rights reserved</div>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        <div id="disclaimer">
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All
+                contents are not intended for any commercial gain or use.
+            </p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
