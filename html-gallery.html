@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My third page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="picturedsp">
+  <div class="main-menu">
+    <header>Local Pet Adoption Service</header>
+    <nav>
+      <ul>
+        <li><a href="html-index.html">Homepage</a></li>
+        <li><a href="html-pets avaiable.html">Pets Available</a></li>
+        <li class="active"><a href="html-gallery.html">Gallery</a></li>
+        <li><a href="html-contact.html">Application</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <h3>Foster</h3>
+    <p>The animals listed below are not currently available for adoption, but are looking for foster families to take
+      them in until they’re ready for homes of their own! And yes, foster parents get first dibs on adopting their
+      houseguest if they fall in love.</p>
+
+    <!-- alternative way of Javascript
+    <div id="album">
+      <div id="photo"><img src="Image/cat1.jpg">
+        <div id="caption">Bella</div>
+        <div id="description">This is Bella</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat2.jpg">
+        <div id="caption">Kitty</div>
+        <div id="description">This is Kitty</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat3.jpg">
+        <div id="caption">Lilly</div>
+        <div id="description">This is Lilly</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat4.jpg">
+        <div id="caption">Charlie</div>
+        <div id="description">This is Charlie</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat5.jpg">
+        <div id="caption">Leo</div>
+        <div id="description">This is Leo</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat6.jpg">
+        <div id="caption">Milo</div>
+        <div id="description">This is Milo</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat7.jpg">
+        <div id="caption">Jack</div>
+        <div id="description">This is Jack</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat8.jpg">
+        <div id="caption">Loki</div>
+        <div id="description">This is Loki</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat9.jpg">
+        <div id="caption">Daisy</div>
+        <div id="description">This is Daisy</div>
+      </div>
+
+      <div id="photo"><img src="Image/cat10.jpg">
+        <div id="caption">Sophie</div>
+        <div id="description">This is Sophie</div>
+      </div>
+
+    </div>-->
+
+<div id="album"></div>
+    <script>
+      var photos = [];//declare an empty array to store image element
+      var fileNames = [];//declare an empty array to store image file names
+      var imageList = []; //declare en empty array to store html list that contains an image
+      var image; //simple variable not an array
+      var openList = "<div id='photo'>";//declare a variable to contain open list tag
+      var closeList = "</div>"; //declare a variable to contain close list tag
+
+      var captionText = ["Bella", "Kitty", "Lilly", "Charlie", "Leo", "Milo", "Jack", "Loki", "Daisy", "Sophie"];
+      var descriptionText=["This is Bella", "This is Kitty", "This is Lilly", "This is Charlie", "This is Leo", "This is Milo", "This is Jack", "This is Loki", "This is Daisy", "This is Sophie"];
+      var openCaptionTag = "<div id='caption'>";
+      var closeCaptionTag = "</div>";
+      var openDescriptionTag = "<div id='description'>";
+      var closeDescriptionTag = "</div>";
+
+      //create a loop to create 6 images starting with index of 0
+      for (var i = 0; i < 10; i++) {
+        fileNames.push("cat" + (i + 1)); //create image file name and store in the array
+        photos.push("<img src = 'Image/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element and store in an array
+        image = openList + photos[i] + openCaptionTag + captionText[i]+ closeCaptionTag + openDescriptionTag + descriptionText[i]+closeDescriptionTag+closeList;//Assemble image element from array with list element and store in a variable
+        imageList.push(image);//Stote(push) the assembled list codes into an array
+      }
+      document.getElementById("album").innerHTML = imageList.join(''); //display all six image codes in the array 
+    </script>
+
+  </main>
+
+  <footer>
+    <div id="nondisclaimer">
+      <div class="copy">&copy;Copyright2021 :: Local Pet Service. All rights reserved</div>
+      <div class="social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </div>
+    <div id="disclaimer">
+      <p>This website is designed and created solely for educational purposes only at Westcliff University. All
+        contents are not intended for any commercial gain or use.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
