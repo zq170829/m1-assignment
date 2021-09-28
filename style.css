@@ -279,16 +279,24 @@ main #album .photo .caption {
   position:absolute;
   width: 150px;
   height: 150px;
-  left: 80px;
-  top:100px;
+  left: 200px;
+  top:750px;
   background-color: black;
   color:white;
   padding: 20px;
   border: solid grey;
   opacity: 0.7;
 }
-
- .close {
+#closebutton {
   color:yellow;
-  padding-top: 80px;
+  margin-top:90px;
+  margin-left:120px;
+  cursor:pointer;
+}
+
+#openboxHeading{
+  font-style:bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 1em 0;
 }

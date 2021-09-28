@@ -29,129 +29,173 @@
       them in until they’re ready for homes of their own! And yes, foster parents get first dibs on adopting their
       houseguest if they fall in love.</p>
 
-    <div id="album">
+    <!-- <div id="album">
       <div class="photo"><img src="Image/cat1.jpg">
         <div class="caption">Bella</div>
         <div class="description" onclick="clickFunction()">This is Bella</div>
-        <div id="openbox">She is five years old</div>
+        <div class="openbox">She is five years old</div>
 
       </div>
 
       <div class="photo"><img src="Image/cat2.jpg">
         <div class="caption">Kitty</div>
         <div class="description" onclick="clickFunction()">This is Kitty</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat3.jpg">
         <div class="caption">Lilly</div>
         <div class="description" onclick="clickFunction()">This is Lilly</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat4.jpg">
         <div class="caption">Charlie</div>
         <div class="description" onclick="clickFunction()">This is Charlie</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat5.jpg">
         <div class="caption">Leo</div>
         <div class="description" onclick="clickFunction()">This is Leo</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat6.jpg">
         <div class="caption">Milo</div>
         <div class="description" onclick="clickFunction()">This is Milo</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat7.jpg">
         <div class="caption">Jack</div>
         <div class="description" onclick="clickFunction()">This is Jack</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat8.jpg">
         <div class="caption">Loki</div>
         <div class="description"> onclick="clickFunction()"This is Loki</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat9.jpg">
         <div class="caption">Daisy</div>
         <div class="description" onclick="clickFunction()">This is Daisy</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
       </div>
 
       <div class="photo"><img src="Image/cat10.jpg">
         <div class="caption">Sophie</div>
         <div class="description" onclick="clickFunction()">This is Sophie</div>
-        <div id="openbox">She is five years old <br> click to close</div>
+        <div class="openbox">She is five years old <br> click to close</div>
+      </div>
+
+    </div> -->
+
+    <div id="album">
+      <div class="photo"><img src="Image/cat1.jpg">
+        <div class="caption">Bella</div>
+        <div class="description" onclick="clickFunction()">This is Bella</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat2.jpg">
+        <div class="caption">Kitty</div>
+        <div class="description" onclick="clickFunction(i)">This is Kitty</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat3.jpg">
+        <div class="caption">Lilly</div>
+        <div class="description" onclick="clickFunction(i)">This is Lilly</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat4.jpg">
+        <div class="caption">Charlie</div>
+        <div class="description" onclick="clickFunction(i)">This is Charlie</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat5.jpg">
+        <div class="caption">Leo</div>
+        <div class="description" onclick="clickFunction(i)">This is Leo</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat6.jpg">
+        <div class="caption">Milo</div>
+        <div class="description" onclick="clickFunction(i)">This is Milo</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat7.jpg">
+        <div class="caption">Jack</div>
+        <div class="description" onclick="clickFunction(i)">This is Jack</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat8.jpg">
+        <div class="caption">Loki</div>
+        <div class="description" onclick="clickFunction(i)">This is Loki</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat9.jpg">
+        <div class="caption">Daisy</div>
+        <div class="description" onclick="clickFunction(i)">This is Daisy</div>
+      </div>
+
+      <div class="photo"><img src="Image/cat10.jpg">
+        <div class="caption">Sophie</div>
+        <div class="description" onclick="clickFunction(i)">This is Sophie</div>
       </div>
 
     </div>
 
-    <!-- <div id="album"></div>
-    <div id="openbox"></div>
+
+    <div id="openbox">
+      <div id="openboxHeading"></div>
+      <div id="openboxDesc"></div>
+      <div id="closebutton">Close</div>
+    </div>
+
     <script>
-      var photos = [];//declare an empty array to store image element
-      var fileNames = [];//declare an empty array to store image file names
-      var imageList = []; //declare en empty array to store html list that contains an image
-      var image; //simple variable not an array
-      var openList = "<div class='photo'>";//declare a variable to contain open list tag
-      var closeList = "</div>"; //declare a variable to contain close list tag
+      // var photos = [];//declare an empty array to store image element
+      // var fileNames = [];//declare an empty array to store image file names
+      // var imageList = []; //declare en empty array to store html list that contains an image
+      // var image; //simple variable not an array
+      // var openList = "<div class='photo'>";//declare a variable to contain open list tag
+      // var closeList = "</div>"; //declare a variable to contain close list tag
 
-      var captionText = ["Bella", "Kitty", "Lilly", "Charlie", "Leo", "Milo", "Jack", "Loki", "Daisy", "Sophie"];
-      var descriptionText = ["This is Bella", "This is Kitty", "This is Lilly", "This is Charlie", "This is Leo", "This is Milo", "This is Jack", "This is Loki", "This is Daisy", "This is Sophie"];
-      var openCaptionTag = "<div class='caption'>";
-      var closeCaptionTag = "</div>";
-      var openDescriptionTag = "<div class='description'>";
-      var closeDescriptionTag = "</div>";
-      var openboxTag="<div class='openbox>";
-        var openboxText=["She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old"]
-        var closebox="Click Here to Close";
+      // var captionText = ["Bella", "Kitty", "Lilly", "Charlie", "Leo", "Milo", "Jack", "Loki", "Daisy", "Sophie"];
+      // var descriptionText = ["This is Bella", "This is Kitty", "This is Lilly", "This is Charlie", "This is Leo", "This is Milo", "This is Jack", "This is Loki", "This is Daisy", "This is Sophie"];
+      // var openCaptionTag = "<div class='caption'>";
+      // var closeCaptionTag = "</div>";
+      // var openDescriptionTag = "<div class='description' onclick='clickFunction( ";
+      // var closeDescriptionTag = ")";
+      // var openboxText = ["She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old", "She is five years old"];
 
-      //create a loop to create 6 images starting with index of 0
-      for (var i = 0; i < 10; i++) {
-        fileNames.push("cat" + (i + 1)); //create image file name and store in the array
-        photos.push("<img src = 'Image/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element and store in an array
-        image = openList + photos[i] + openCaptionTag + captionText[i] + closeCaptionTag + openDescriptionTag + descriptionText[i] + openboxTag +openboxText[i]+<br>+closebox+closeDescriptionTag + closeList;//Assemble image element from array with list element and store in a variable
-        imageList.push(image);//Stote(push) the assembled list codes into an array
+      // //create a loop to create 6 images starting with index of 0
+      // for (var i = 0; i < 10; i++) {
+      //   fileNames.push("cat" + (i + 1)); //create image file name and store in the array
+      //   photos.push("<img src = 'Image/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element and store in an array
+      //   image = openList + photos[i] + openCaptionTag + captionText[i] + closeCaptionTag + openDescriptionTag + i +
+      //     closedescriptionTag + descriptionText[i] + +closeList;
+      //   imageList.push(image);//Stote(push) the assembled list codes into an array
 
-      }
-      document.getElementById("album").innerHTML = imageList.join(''); //display all six image codes in the array 
-  
-
-      var openboxText = document.getElementById("openbox").style.visibility="hidden";
-      var descriptionClick = document.getElementById("description");
-      descriptionClick.addEventListener("click", clickBoxFunction);
-      function clickBoxFunction() {
-        openboxText.innerHTML = "This is Bella, she is five";
-      }
-      
-    </script> -->
-    <script>
-      document.getElementById("openbox").style.visibility = 'hidden';
-      x = document.getElementById("openbox");
-      function clickFunction(){
-      if (x.style.visibility == 'hidden') {
-        x.style.visibility = 'visible';
-      } else {
-        x.style.visibility = 'hidden';
-      }
-    }
-
-      // function clickFunction() {
-      //   document.querySelectorAll(".openbox").style.visibility = 'hidden';
-      //   var x, i;
-      //   x = document.querySelectorAll(".openbox");
-
-      //   for (i = 0; i < x.length; i++) {
-      //     x[i].style.visibility='visible';
-      //   }
       // }
+      // document.getElementById("album").innerHTML = imageList.join(''); //display all six image codes in the array
+
+      document.getElementById("openbox").style.visibility = "hidden";
+      
+      //create function when click the close button to close the openbox
+      closeButton = document.getElementById("closebutton");
+      closeButton.addEventListener("click", Closeinfo);
+      function Closeinfo() {
+        document.getElementById("openbox").style.visibility = "hidden";
+      }
+
+
+      function clickFunction() {
+        document.getElementById("openbox").style.visibility = "visible";
+        document.getElementById("openboxHeading").innerHTML = "This is Bella";
+        document.getElementById("openboxDesc").innerHTML = "She is Five years old";
+      }
+
 
     </script>
 
