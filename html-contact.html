@@ -30,11 +30,7 @@
                 <label>Enter your full name</label>
                 <input type="text" name="name" placeholder="Michael Jordan">
 
-                <label>Enter your email</label>
-                <input type="email" name="email">
 
-                <label>Enter your phone</label>
-                <input type="text" name="phone">
 
                 <label>Select your gender</label>
                 <input type="radio" name="gender" value="male" />Male
@@ -47,18 +43,40 @@
                     <option>Joy</option>
                 </select>
 
-                <label>How should we contact you?</label>
+                <label onchange="choice()" id="dropdown">How should we contact you?</label>
                 <select>
                     <option>Email</option>
                     <option>Phone</option>
                 </select>
 
+                <div style="display:none" id="email">
+                    <label>Enter your email</label>
+                    <input type="email" name="email">
+                </div>
+
+                <div style="display: none" id="phone">
+                    <label>Enter your phone</label>
+                    <input type="text" name="phone">
+
+                </div>
                 <label>Tell us the reason of your visit today:</label>
                 <textarea rows="5" cols="30"></textarea><br>
 
                 <input type="submit" value="Submit your application">
             </fieldset>
         </form>
+
+        <script>
+            function choice() {
+                var select = document.getElementById("dropdown");
+                if (select.value == "Email"){
+                    document.getElementById("email").style.visibility="visible";
+                } else {
+                    document.getElementById("phone").style.visibility="visible";
+                }
+            }
+            select();
+        </script>
     </main>
     <footer>
         <div id="nondisclaimer">
